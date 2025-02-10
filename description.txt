@@ -1,0 +1,4 @@
+Proximity Text Chat
+
+Changes the color of text when a player is further, and makes it so you can't hear when out of range.
+Using "/shout" or "/yell" to scream to the entire server!

@@ -1,0 +1,22 @@
+Proximity Text Chat
+
+Changes the color of text when a player is further, and makes it so you can't hear when out of range.
+Using "/shout" or "/yell" to scream to the entire server!
+
+* [url=https://steamcommunity.com/id/mznarnia/myworkshopfiles/?appid=1281930]Check out my other mods![/url]
+* [url=https://discord.gg/xAQGT4VetN]Discord Support Server[/url]
+* [url=https://github.com/xNarnia/ProximityTextChat]Source Code[/url]
+
+[img]https://raw.githubusercontent.com/xNarnia/Gif-Repo/refs/heads/main/ProximityTextChat/ProxTextChat-Demo.gif[/img]
+[img]https://raw.githubusercontent.com/xNarnia/Gif-Repo/refs/heads/main/ProximityTextChat/ProxTextChat-Shout.png[/img]
+
+Changelog
+[0.9]
+- Added new '/whisper' and '/w' command! This allows you to send a message to someone very very close to you for sneaky plans.
+- Fixed a bug where shout would show the wrong player
+- Code optimization and cleanup
+- This mod is now open-source!
+[0.8.2]
+- Mod is now Server-side
+[0.8]
+- Proximity Text Chat is released!

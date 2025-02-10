@@ -1,0 +1,4 @@
+displayName = Proximity Text Chat
+side = Server
+author = Narnia
+version = 0.9
