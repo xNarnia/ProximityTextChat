@@ -1,7 +1,9 @@
-Proximity Text Chat
+[b]This is a server-side mod.[/b]
 
+[h1]Proximity Text Chat[/h1]
 Changes the color of text when a player is further, and makes it so you can't hear when out of range.
-Using "/shout" or "/yell" to scream to the entire server!
+Use "/shout", "yell", "/s", or "/y" to scream to the entire server!
+Use "/whisper" or "/w" to whisper to someone very very close!
 
 * [url=https://steamcommunity.com/id/mznarnia/myworkshopfiles/?appid=1281930]Check out my other mods![/url]
 * [url=https://discord.gg/xAQGT4VetN]Discord Support Server[/url]
@@ -9,8 +11,16 @@ Using "/shout" or "/yell" to scream to the entire server!
 
 [img]https://raw.githubusercontent.com/xNarnia/Gif-Repo/refs/heads/main/ProximityTextChat/ProxTextChat-Demo.gif[/img]
 [img]https://raw.githubusercontent.com/xNarnia/Gif-Repo/refs/heads/main/ProximityTextChat/ProxTextChat-Shout.png[/img]
+[img]https://raw.githubusercontent.com/xNarnia/Gif-Repo/refs/heads/main/ProximityTextChat/ProxTextChat-Whisper.png[/img]
 
 Changelog
+[0.9.1.4]
+- Updated icon
+[0.9.1.3]
+- Increased the radius of /say chat by 50% (this will be configurable in the next update)
+- Added /s and /y shortcuts for the /shout command
+- Added login message to let the user know [ProximityTextChat] is enabled
+- Text chat dimming at the farthest radius is darker by 10%
 [0.9]
 - Added new '/whisper' and '/w' command! This allows you to send a message to someone very very close to you for sneaky plans.
 - Fixed a bug where shout would show the wrong player
@@ -19,4 +29,5 @@ Changelog
 [0.8.2]
 - Mod is now Server-side
 [0.8]
-- Proximity Text Chat is released!
+- Proximity Text Chat is released![quote=tModLoader ProximityTextChat]
+Developed By Narnia[/quote]

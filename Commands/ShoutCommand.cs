@@ -12,6 +12,8 @@ using Microsoft.Xna.Framework;
 namespace ProximityTextChat.Commands
 {
 	// Alias
+	public class SCommand : ShoutCommand { public override string Command => "s"; }
+	public class YCommand : ShoutCommand { public override string Command => "y"; }
 	public class YellCommand : ShoutCommand { public override string Command => "yell"; }
 	public class ShoutCommand : ModCommand
 	{

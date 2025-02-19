@@ -29,20 +29,29 @@ namespace ProximityTextChat
 			base.Load();
 			PTCMod = this;
 			On_SayChatCommand.ProcessIncomingMessage += On_SayChatCommand_ProcessIncomingMessage;
+			On_NetMessage.greetPlayer += NetMessage_greetPlayer;
 		}
 
 		public override void Unload()
 		{
 			base.Unload();
 			On_SayChatCommand.ProcessIncomingMessage -= On_SayChatCommand_ProcessIncomingMessage;
+			On_NetMessage.greetPlayer -= NetMessage_greetPlayer;
 		}
 
 		private void On_SayChatCommand_ProcessIncomingMessage(On_SayChatCommand.orig_ProcessIncomingMessage orig, SayChatCommand self, string text, byte clientId)
 		{
-			SendProximityChat(text, 500, 2000, clientId);
+			SendProximityChat(text, 500, 3000, clientId);
 
 			if (Main.dedServ)
 				Console.WriteLine("<{0}> {1}", Main.player[clientId].name, text);
+		}
+
+		private void NetMessage_greetPlayer(On_NetMessage.orig_greetPlayer orig, int plr)
+		{
+			NetPacket packet = NetTextModule.SerializeServerMessage(NetworkText.FromLiteral("[ProximityTextChat]\n  /shout /whisper"), Color.SkyBlue, byte.MaxValue);
+			NetManager.Instance.SendToClient(packet, plr);
+			orig(plr);
 		}
 
 		/// <summary>
@@ -80,8 +89,8 @@ namespace ProximityTextChat
 					{
 						var distanceAsPercent = (distance - innerRadius) / (outerRadius - innerRadius);
 						// Reuse distance as a distanceMultiplier to dim the text as it gets closer to outerRadius
-						// Don't dim too much though! 70% dim is enough.
-						distance = 1 - (float)Math.Min(distanceAsPercent, 0.7);
+						// Don't dim too much though! 75% dim is enough.
+						distance = 1 - (float)Math.Min(distanceAsPercent, 0.8);
 
 						ChatHelper.SendChatMessageToClientAs((byte)playerIdWhoSent, NetworkText.FromLiteral(message), color * distance, i);
 					}

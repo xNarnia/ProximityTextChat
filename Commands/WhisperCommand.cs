@@ -34,7 +34,7 @@ namespace ProximityTextChat.Commands
 		public override void Action(CommandCaller caller, string input, string[] args)
 		{
 			string message = input.Split(" ", 2)[1];
-			PTCMod.SendProximityChat(message, 30, 60, (byte)caller.Player.whoAmI, Color.SkyBlue);
+			PTCMod.SendProximityChat(message, 30, 60, (byte)caller.Player.whoAmI, Color.LawnGreen);
 
 			if (Main.dedServ)
 				Console.WriteLine("<{0}> {1}", Main.player[caller.Player.whoAmI].name, message);

@@ -1,4 +1,8 @@
 displayName = Proximity Text Chat
 side = Server
 author = Narnia
-version = 0.9
+version = 0.9.1.4
+homepage = https://steamcommunity.com/sharedfiles/filedetails/?id=3423915382
+includeSource = true
+includePDB = true
+buildIgnore = .git/,.vs/,.bin/, src/
